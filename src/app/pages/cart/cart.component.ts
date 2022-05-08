@@ -116,7 +116,7 @@ export class CartComponent implements OnInit, OnDestroy, AfterContentChecked {
         error1 => {
           console.log('Checkout Cart Failed');
         });
-      this.router.navigate(['/']);
+      this.router.navigate(['payment'], {queryParams: {items: JSON.stringify(this.productInOrders)}})
     }
   }
 }

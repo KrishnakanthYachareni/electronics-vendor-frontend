@@ -12,6 +12,7 @@ import {ProductListComponent} from "./pages/product-list/product.list.component"
 import {UserDetailComponent} from "./pages/user-edit/user-detail.component";
 import {ProductEditComponent} from "./pages/product-edit/product-edit.component";
 import {Role} from "./enum/Role";
+import {PaymentComponent} from "./pages/payment/payment.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/product', pathMatch: 'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'success', component: SignupComponent},
   {path: 'order/:id', component: OrderDetailComponent, canActivate: [AuthGuard]},
   {path: 'order', component: OrderComponent, canActivate: [AuthGuard]},
+  {path: 'payment', component: PaymentComponent, canActivate: [AuthGuard]},
   {path: 'seller', redirectTo: 'seller/product', pathMatch: 'full'},
   {
     path: 'seller/product',
