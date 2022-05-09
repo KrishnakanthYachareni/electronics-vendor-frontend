@@ -1,6 +1,8 @@
 # electronics-vendor-frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+## Sample Demo
+https://www.youtube.com/watch?v=l-dfgm-8nQU
 
 ## Development server
 
